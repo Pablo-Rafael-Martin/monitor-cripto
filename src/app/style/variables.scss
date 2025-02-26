@@ -1,0 +1,9 @@
+
+$total-columns: 12;
+$column-padding: 20rem;
+$main-frame-padding: 30rem;
+
+:root {
+    --column-padding: $column-padding;
+    --main-frame-padding: $main-frame-padding;
+}

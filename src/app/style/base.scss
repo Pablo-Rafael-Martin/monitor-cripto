@@ -1,0 +1,27 @@
+@use 'variables.scss' as *;
+
+.main-frame {
+    padding-left: $main-frame-padding;
+    padding-right: $main-frame-padding;
+    margin-left: calc(-1 * $column-padding / 2);
+    margin-right: calc(-1 * $column-padding / 2);
+    box-sizing: border-box;
+}
+
+@for $i from 1 through $total-columns {
+    .col-#{$i} {
+        width: 100%;
+        max-width: calc((100% / $total-columns) * #{$i});
+        padding-left: calc($column-padding / 2);
+        padding-right: calc($column-padding / 2);
+    }
+}
+
+
+.main-frame.flex {
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    align-content: initial;
+    flex-wrap: wrap;
+}
