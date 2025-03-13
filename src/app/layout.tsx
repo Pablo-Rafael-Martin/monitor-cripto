@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./style/global.scss";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -15,7 +15,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body>
-        {children}
+        {/* {children} */}
+        <AntdRegistry>{children}</AntdRegistry>
       </body>
     </html>
   );

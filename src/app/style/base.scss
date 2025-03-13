@@ -8,6 +8,14 @@
     box-sizing: border-box;
 }
 
+.main-frame.flex {
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    align-content: initial;
+    flex-wrap: wrap;
+}
+
 @for $i from 1 through $total-columns {
     .col-#{$i} {
         width: 100%;
@@ -17,11 +25,6 @@
     }
 }
 
-
-.main-frame.flex {
-    display: flex;
-    justify-content: initial;
-    align-items: initial;
-    align-content: initial;
-    flex-wrap: wrap;
+body {
+    font-size: 12rem;
 }
