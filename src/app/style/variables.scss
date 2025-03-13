@@ -1,9 +1,11 @@
 
 $total-columns: 12;
-$column-padding: 20rem;
-$main-frame-padding: 30rem;
+$gutter: 14rem;
+$half-gutter: calc(#{$gutter} / 2);
+$main-frame-padding: 12rem;
 
 :root {
-    --column-padding: $column-padding;
+    --gutter: $gutter;
+    --half-gutter: $half-gutter;
     --main-frame-padding: $main-frame-padding;
 }
