@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./style/global.scss";
 import { AntdRegistry } from "@ant-design/nextjs-registry";
+import { ConfigProvider } from "antd";
+import { themeConfig } from './style/theme.js';
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -8,16 +10,18 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 // };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="pt-BR">
-      <body>
-        {/* {children} */}
-        <AntdRegistry>{children}</AntdRegistry>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="pt-BR">
+			<body>
+				{/* {children} */}
+				<ConfigProvider theme={themeConfig}>
+					<AntdRegistry>{children}</AntdRegistry>
+				</ConfigProvider>
+			</body>
+		</html>
+	);
 }
