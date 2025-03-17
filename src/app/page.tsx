@@ -1,11 +1,12 @@
 'use client';
 
-import { Layout, Menu } from "antd";
+import { Flex, Form, Layout, Menu } from "antd";
 import styles from "./page.module.css";
 import { Header, Content, Footer } from "antd/es/layout/layout";
 import AppMenu from "@/components/AppMenu";
 import { Roboto } from "next/font/google";
 import WebsiteLogo from "@/components/WebsiteLogo";
+import LoginContent from "./LoginContent";
 
 
 
@@ -23,17 +24,15 @@ export default function Entrar() {
 
             <Layout style={{ minHeight: '100vh', }}>
                 <Header style={{ backgroundColor: "transparent" }}>
-                    <WebsiteLogo />
+                    <Flex style={{justifyContent: 'space-between'}}>
+                        <WebsiteLogo />
 
-                    <AppMenu />
+                        <AppMenu />
+                    </Flex>
                 </Header>
 
                 <Content>
-                    <div className="main-frame flex">
-                        <div className="col-5">
-                            <h2>Form</h2>
-                        </div>
-                    </div>
+                    <LoginContent />
                 </Content>
 
                 <Footer>

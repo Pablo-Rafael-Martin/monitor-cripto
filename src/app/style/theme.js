@@ -1,18 +1,25 @@
 import { theme } from "antd"
 
+const primaryBackground = '#f5f5f5';
+const mainBlue = '#0057FF';
+
 export const themeConfig = {
     algorithm: theme.defaultAlgorithm,
     token: {
-        colorBgBase: '#f5f5f5',
-        colorPrimary: '#0057FF',
-        colorInfo: '#0057FF',
-        colorLink: '#0057FF',
+        colorBgBase: primaryBackground,
+        colorPrimary: mainBlue,
+        colorInfo: mainBlue,
+        colorLink: mainBlue,
     },
     components: {
+        Layout: {
+            bodyBg: primaryBackground,
+        },
         Button: {
-            // defaultColor: 'red',
+            defaultColor: 'white !important',
+            defaultBg: 'black !important',
             primaryColor: 'white !important',
-            // solidTextColor: 'red',
+            activeBg: 'transparent',
         }
     }
 }
