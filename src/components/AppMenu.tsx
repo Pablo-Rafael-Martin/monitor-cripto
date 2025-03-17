@@ -6,7 +6,7 @@ import React from 'react';
 
 function AppMenu() {
     const menuItems = [
-        { label: <Button type="primary" color="default" href={"/"}>Home</Button>, key: 1 },
+        { label: <Button type="primary" color="default" href={"/"}>Entrar</Button>, key: 1 },
         { label: <Button type="primary" href={'/cadastro'}>Cadastre-se</Button>, key: 2 }
     ];
 
