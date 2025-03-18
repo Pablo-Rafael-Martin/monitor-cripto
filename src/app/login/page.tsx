@@ -6,7 +6,7 @@ import { Header, Content, Footer } from "antd/es/layout/layout";
 import AppMenu from "@/components/AppMenu";
 import { Roboto } from "next/font/google";
 import WebsiteLogo from "@/components/WebsiteLogo";
-import LoginContent from "./login/LoginContent";
+import LoginContent from "./LoginContent";
 
 
 
@@ -20,26 +20,25 @@ const roboto = Roboto({
 export default function Entrar() {
     return (
         <>
-            <h1>Landing page</h1>
-            {/* <style jsx global>{`html {font-family: ${roboto.style.fontFamily};}`}</style>
+            <style jsx global>{`html {font-family: ${roboto.style.fontFamily};}`}</style>
 
             <Layout style={{ minHeight: '100vh', }}>
-                <Header style={{ backgroundColor: "transparent" }}>
+                {/* <Header style={{ backgroundColor: "transparent" }}>
                     <Flex style={{justifyContent: 'space-between'}}>
                         <WebsiteLogo />
 
                         <AppMenu />
                     </Flex>
-                </Header>
+                </Header> */}
 
                 <Content>
                     <LoginContent />
                 </Content>
 
-                <Footer>
+                {/* <Footer>
                     Este é o footer
-                </Footer>
-            </Layout> */}
+                </Footer> */}
+            </Layout>
         </>
     );
 }
